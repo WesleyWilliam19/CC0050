@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="p-3 mb-2 bg-light text-dark">
+    {% from 'bootstrap/form.html' import render_form %}
+    {{ render_form(form,action=action,method="post") }}
+</div>
+
+{% endblock %}
